@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+.custom-navbar{
+    background: black;
+    box-shadow: -2px 0px 15px 10px rgba(8,8,8,0.6);
+    z-index: 2;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+} 
+
+.navbar-brand{
+    font-size: 35px;
+}
+.nav-link:hover, .dropdown-item:hover{
+    color: #b0b0b0 !important;
+    background: black;
+}
+
+.dropdown-menu{
+    background: black;
+}
+
+.font-main{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.font-secondary{
+    font-family: 'Cinzel', serif;
+}
+
+.text-small{
+    font-size: 12px;
+}
+
+.main-title{
+    color: white;
+    font-size:7.5vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.container-height{
+    min-height: 100vh;
+}
+
+.content{
+    z-index: 1;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    animation: fadeIn 2s;
+}
+
+.row-width{width: 90%;}
+
+.background{
+    background-image: url('../images/holy_allegory.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-tint, .bg-tint-dark{
+    position: relative;
+}
+
+.bg-tint::after, .bg-tint-dark::after{
+    position: relative;
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-tint::after{
+    background: rgba(35, 34, 8, 0.5);
+}
+
+.bg-tint-dark::after{
+    background: rgba(8, 8, 8, 0.85);
+}
+
+footer{
+    background: black;
+    box-shadow: 0px 0px 15px 10px rgba(8,8,8,0.4);
+    position: relative;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+/*------------ Gallery ------------*/
+.gallery-item{
+    height: 135px;
+    width: 165px;
+    margin: 20px auto ;
+    border: 1px solid rgba(176, 176, 176, 0.3);
+}
+
+.gallery-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
+    opacity: 0.9;
+    
+}
+
+.gallery-item img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* Modal */
+.modal-content{
+    border-radius: 0;
+    background: rgba(0,0,0,0.95);
+}
+
+.gallery-content {
+    position: relative;
+    height: 90vh;
+    width: 70vw;
+}
+
+.close, .prev, .next{position: absolute;}
+
+.close{
+ top: 15px;
+ right: 15px;
+ font-size: 32px;
+ border: none;
+ background: transparent;
+ color: white;
+ font-weight: 600;
+ 
+}
+
+.prev, .next{
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 40px;
+    color: white;
+    border: none;
+    background: transparent;
+}
+
+.prev{left: 20px;}
+
+.next{right: 20px;} 
+
+.close:hover, .prev:hover, .next:hover{color: #b0b0b0;}
+
+.gallery-image-holder{height: 90%;}
+
+.gallery-image-holder img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background:  black; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: white; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0; 
+}
+
+.artist-img{
+    height: 290px; 
+    width: auto;
+    border: 1px solid rgba(176, 176, 176, 0.3);
+}
+
+.text{
+    font-size: 15px;
+    color: rgb(213, 213, 213);
+}
+
+.text p{
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+
+.artpiece{
+    height: 235px;
+    border: 1px solid rgba(176, 176, 176, 0.3);
+}
+
+.description{margin-top: 5px;}
+
+.description p{
+    margin: 0;
+    font-size: 14px;
+}
