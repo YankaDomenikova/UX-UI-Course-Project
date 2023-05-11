@@ -10,7 +10,7 @@ let nextBtn = document.querySelector(".next");
 
 let index = 1;
 
-function showLightBox(n) {
+function showModal(n) {
     if (n > galleryItems.length) {
         index = 1;
     } else if (n < 1) {
@@ -27,7 +27,7 @@ function currentImage() {
     galleryModal.style.display = "block";
     document.body.style.overflow = "hidden";
     let imageIndex = parseInt(this.getAttribute("data-index"));
-    showLightBox(index = imageIndex);
+    showModal(index = imageIndex);
 }
 
 for (let i = 0; i < galleryItems.length; i++) {
@@ -35,7 +35,7 @@ for (let i = 0; i < galleryItems.length; i++) {
 }
 
 function slideImage(n) {
-    showLightBox(index += n);
+    showModal(index += n);
 }
 
 function prevImage() {
